@@ -34,18 +34,26 @@ class _BuildListViewState extends State<BuildListView> {
   String itempesquisa = '33395';
   final RoundedLoadingButtonController _btnController2 =
       RoundedLoadingButtonController();
+  String itemerror = '';
 
   _getUsers(String itempresquisa) {
     API.getPreco(itempresquisa).then((response) {
       setState(() {
+         if (response.statusCode != 200) {
+           _btnController2.error();
+           itemerror = 'Erro Servidor';
+         }
+      {
         Iterable lista = json.decode(response.body);
         produtos = lista.map((model) => Produto.fromJson(model)).toList();
         _btnController2.stop();
+      };
       });
     });
   }
 
-  _BuildListViewState() {}
+  // Never newMethod() => throw Exception("API error");
+  // _BuildListViewState(){_btnController2.stop();}
 
   @override
   Widget build(BuildContext context) {
@@ -67,6 +75,7 @@ class _BuildListViewState extends State<BuildListView> {
                         border: OutlineInputBorder(),
                         labelText: 'Digite o codido do descrição do item',
                         hintText: 'Digite aqui!',
+                        
                         isDense: true)),
                 flex: 1),
             const SizedBox(height: 20),
@@ -96,7 +105,7 @@ class _BuildListViewState extends State<BuildListView> {
                           },
                           child: ListTile(
                             title: Text(
-                              '----------------------------------------------\nCodigo =' +
+                              '----------------' + itemerror + '------------------------------\nCodigo =' +
                                   produtos[index].codigo +
                                   '\nDescricao = ' +
                                   produtos[index].descricao,
