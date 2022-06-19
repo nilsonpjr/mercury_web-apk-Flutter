@@ -33,7 +33,7 @@ class BuildListView extends StatefulWidget {
 class _BuildListViewState extends State<BuildListView> {
   var produtos = <Produto>[];
   String itempesquisa = '33395';
-  var _controller = TextEditingController();
+  final _controller = TextEditingController();
 
   final RoundedLoadingButtonController _btnController2 =
       RoundedLoadingButtonController();
