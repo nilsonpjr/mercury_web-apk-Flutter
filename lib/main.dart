@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   build(context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Http-Json-ListView',
+      title: 'Preço Mercury',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
