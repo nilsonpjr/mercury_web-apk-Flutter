@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   build(context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Preço Mercury',
+      title: 'Preço Mercury - Maré Alta',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

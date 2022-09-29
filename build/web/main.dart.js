@@ -62748,7 +62748,7 @@ A.mL.prototype={
 jQ(){var s=this,r=t.z
 return A.aE(["codigo",s.a,"descricao",s.b,"valorCusto",s.c,"valorTabela",s.d,"valorVenda",s.e,"qtdaEst",s.f],r,r)}}
 A.EP.prototype={
-M(a,b){return new A.vu(B.vm,"Pre\xe7o Mercury",A.ahL(null,B.cb),!1,null)}}
+M(a,b){return new A.vu(B.vm,"Pre\xe7o Mercury - Mar\xe9 Alta",A.ahL(null,B.cb),!1,null)}}
 A.tD.prototype={
 au(){var s=A.b([],t.TE),r=$.ba(),q=t.Si
 return new A.J_(s,new A.xw(B.ei,r),new A.xw(B.ei,r),new A.GF(A.abw(B.ct,q)),new A.GF(A.abw(B.ct,q)),B.m)}}
