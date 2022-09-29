@@ -18584,7 +18584,7 @@ EP:function EP(a){this.a=a},
 tD:function tD(a){this.a=a},
 J_:function J_(a,b,c,d,e,f){var _=this
 _.d=a
-_.e="33395"
+_.e="802893q01"
 _.f=b
 _.r=c
 _.w=d
@@ -19288,7 +19288,7 @@ throw A.c(A.bF("Invalid "+a+' "'+b+'": '+J.aoK(r),J.aeS(r),J.aeR(r)))}else throw
 PM(a){var s=0,r=A.a2(t.z),q
 var $async$PM=A.a3(function(b,c){if(b===1)return A.a_(c,r)
 while(true)switch(s){case 0:s=3
-return A.a8(A.axt(A.xT("http://crossorigin.me/https://app-mercuryapi.herokuapp.com/preco/"+a)),$async$PM)
+return A.a8(A.axt(A.xT("https://app-mercuryapi.herokuapp.com/preco/"+a)),$async$PM)
 case 3:q=c
 s=1
 break
@@ -62748,7 +62748,7 @@ A.mL.prototype={
 jQ(){var s=this,r=t.z
 return A.aE(["codigo",s.a,"descricao",s.b,"valorCusto",s.c,"valorTabela",s.d,"valorVenda",s.e,"qtdaEst",s.f],r,r)}}
 A.EP.prototype={
-M(a,b){return new A.vu(B.vm,"Http-Json-ListView",A.ahL(null,B.cb),!1,null)}}
+M(a,b){return new A.vu(B.vm,"Pre\xe7o Mercury",A.ahL(null,B.cb),!1,null)}}
 A.tD.prototype={
 au(){var s=A.b([],t.TE),r=$.ba(),q=t.Si
 return new A.J_(s,new A.xw(B.ei,r),new A.xw(B.ei,r),new A.GF(A.abw(B.ct,q)),new A.GF(A.abw(B.ct,q)),B.m)}}
